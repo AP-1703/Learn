@@ -371,6 +371,41 @@ input:focus, textarea:focus, select:focus {
   border: 0;
 }
 
+/* Portfolio page specific styles */
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--background);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.portfolio-section {
+  margin-bottom: 2rem;
+}
+
+.portfolio-section:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio-footer {
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .portfolio-container {
+    background-color: var(--surface);
+  }
+}
+
 @supports (scrollbar-width: thin) {
   * {
     scrollbar-width: thin;
