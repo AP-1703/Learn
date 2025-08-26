@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arpit Phillips</title>
+    <title>Arpit Phillips — Portfolio</title>
+    <meta name="description" content="Portfolio of Arpit Phillips, Fullstack Developer student. Projects, skills, and contact.">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,22 +32,33 @@
         section {
             margin-bottom: 30px;
         }
+        :focus-visible {
+            outline: 2px solid #0a7cff;
+            outline-offset: 2px;
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background-color: #0e0f12; }
+            .container { background-color: #14161a; color: #e6e6e6; }
+            h1, h2 { color: #ffffff; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
+        <header role="banner">
             <h1>Arpit Phillips</h1>
             <p>Fullstack Developer Student</p>
         </header>
         
+        <main id="main" role="main">
         <section id="about">
             <h2>About Me</h2>
             <p>My name is Arpit Phillips, and I am a passionate Fullstack Developer Student.</p>
             <p>This page follows my learning journey closely and the links can be followed to take a look at the project files. The GitHub repo has been updated at each stage so that the entire documentation can be observed.</p>
             <p>Feel free to explore the projects and reach out if you have any questions or suggestions!</p>
-            <p>After Fullstack Development, I aim to specialize in backend technologies and cloud computing.</p>
-            <p>Next steps for me are: <ul>
+            <p>After Fullstack Development, I aim to specialize in app development, backend technologies and cloud computing.</p>
+            <p>Next steps for me are:</p>
+            <ul>
                 <li>Learn Node.js and Express for backend development</li>
                 <li>Learn Rust and server-side development</li>
                 <li>Build RESTful APIs and microservices</li>
@@ -52,13 +66,13 @@
                 <li>Learn React Native for mobile app development</li>
                 <li>Learn Python and use it in ML</li>
                 <li>Explore data science and AI concepts</li>
-            </ul></p>
+            </ul>
         </section>
         
         <section id="projects">
             <h2>Projects</h2>
             <p>The first project is a personal portfolio website built with HTML, CSS, and JavaScript. The link to it on Github is this:</p>
-            <p><a href="https://github.com/AP-1703/Learn" target="_blank">https://github.com/AP-1703/Learn</a></p>
+            <p><a href="https://github.com/AP-1703/Learn" target="_blank" rel="noopener noreferrer">https://github.com/AP-1703/Learn</a></p>
         </section>
         
         <section id="skills">
@@ -68,12 +82,12 @@
         
         <section id="contact">
             <h2>Contact</h2>
-            <p>Your contact information here - <a href="mailto:arpit.phillips@gmail.com">arpit.phillips@gmail.com</a>, <a href="https://www.linkedin.com/in/arpit.phillips/" target="_blank">LinkedIn</a>, <a href="https://github.com/AP-1703" target="_blank">GitHub</a></p>
+            <p><a href="https://www.linkedin.com/in/arpit.phillips/" target="_blank" rel="noopener noreferrer">LinkedIn</a>, <a href="https://github.com/AP-1703" target="_blank" rel="noopener noreferrer">GitHub</a></p>
         </section>
-        
-        <footer>
+        </main>
+        <footer role="contentinfo">
             <hr>
-            <p> 2025 Arpit Phillips. No copyright infringement intended.</p>
+            <p>© <time datetime="2025">2025</time> Arpit Phillips. No copyright infringement intended.</p>
             <p>Built with HTML | Last updated: <time datetime="2025-08-01">August 2025</time></p>
         </footer>
     </div>
